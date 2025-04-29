@@ -12,35 +12,31 @@ body{
   }
   .card{
     width: 18rem;
-    background-color:rgb(247, 227, 245);
+    background-color:rgb(255, 255, 255);
     color: rgb(27, 2, 2);
     border-radius: 10px;
     overflow: hidden;
     transition: transform 0.3s ease-in-out;
-    box-shadow: 0 4px 8px rgb(255, 255, 255,0.1)
+    box-shadow: 0 4px 8px rgb(253, 229, 247)
   }
 
   /*efecto hover de la tarjeta*/
   .card:hover {
     transform: scale(1.05);
-    box-shadow: 0 4px 8px rgb(255, 255, 255,0.1)
   }
 
   /*imagen dentro de las tarjetas*/
   .card img{
     width: 100%;
-    height: 200px;
+    height: 250px;
     object-fit: cover;
   }
   /*boton*/
   .card .btn{
-    background-color: rgb(252, 250, 251);
+    background-color: rgb(231, 210, 221);
     color:rgb(8, 6, 3);
     border:none;
     transition: background 0.3s ease-in-out;
-  }
-  .card .btn.hover{
-    background-color: bisque;
   }
 
   /*repositividad en pantallas chicas*/
