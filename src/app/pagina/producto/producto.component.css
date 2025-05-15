@@ -1,48 +1,58 @@
-body{ 
-    background-color: #f3ebeb;
-    color: white;
-    font-family:Arial;
+body{
+ background-color: #f3ebeb;
+ color: white;
+ font-family:Arial;
 }
-  .card-container{
-    display: flex;
-    justify-content: center; /*centrar horizontalemente las tarjetas*/
-    gap: 20px; /*espacio entre tarjetas*/
-    flex-wrap: wrap; /*que se acomode a la panatalla*/
-    padding: hidden;
-  }
-  .card{
-    width: 18rem;
-    background-color:rgb(255, 255, 255);
-    color: rgb(27, 2, 2);
-    border-radius: 10px;
-    overflow: hidden;
-    transition: transform 0.3s ease-in-out;
-    box-shadow: 0 4px 8px rgb(253, 229, 247)
-  }
+ .card-container{
+ display: flex;
+ justify-content: center; /*centrar horizontalemente las tarjetas*/
+ gap: 30px; /*espacio entre tarjetas*/
+ flex-wrap: wrap; /*que se acomode a la panatalla*/
+ padding: 40px;
 
-  /*efecto hover de la tarjeta*/
-  .card:hover {
-    transform: scale(1.05);
-  }
+ }
+ .card{
+ width: 18rem;
+ background-color:rgb(255, 255, 255);
+ color: rgb(27, 2, 2);
+ border-radius: 10px;
+ overflow: hidden;
+ transition: transform 0.3s ease-in-out;
+ box-shadow: 0 4px 8px rgb(253, 229, 247)
+ }
+ /*efecto hover de la tarjeta*/
+ .card:hover {
+ transform: scale(1.05);
+ }
+ /*imagen dentro de las tarjetas*/
+ .card img{
+ /*width: 100%;
+ height: 400px;*/
+ object-fit: cover;
+ width: 300px;
+ height: auto;
 
-  /*imagen dentro de las tarjetas*/
-  .card img{
-    width: 100%;
-    height: 400px;
-    object-fit: cover;
-  }
-  /*boton*/
-  .card .btn{
-    background-color: rgb(231, 210, 221);
-    color:rgb(8, 6, 3);
-    border:none;
-    transition: background 0.3s ease-in-out;
-  }
+ }
+ /*boton*/
+ .card .btn{
+ background-color: rgb(231, 210, 221);
+ color:rgb(8, 6, 3);
+ border:none;
+ transition: background 0.3s ease-in-out;
+ }
 
-  /*repositividad en pantallas chicas*/
-  @media (max-width: 600px){
-    .card-container{
-        flex-direction: column;
-        align-items: center;
+.grid-container {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr); /* 3 columnas */
+      grid-template-rows: repeat(4, auto);   /* 4 filas */
+      gap: 20px;
+      padding: 20px;
     }
-  }
+
+ /*repositividad en pantallas chicas*/
+ @media screen and (max-width: 600px){
+ .card-container{
+ flex-direction: column;
+ align-items: center;
+ }
+ }
