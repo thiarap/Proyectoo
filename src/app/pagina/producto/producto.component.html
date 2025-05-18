@@ -1,10 +1,11 @@
+<!-- 
 <div class="card-container">
   <div class="grid-container">
     <div *ngFor="let producto of productos; let i = index">
       <div class="card">
         <img src="{{producto.img}}" class="card-img-top" alt="...">
         <div class="card-body">
-          <h5 class="card-title">{{producto.marca}}</h5>
+          <h5 class="title">{{producto.marca}}</h5>
           <h5 class="card-title">{{producto.nombre}}</h5>
           <p class="card-text">${{producto.precio}}</p>
           <a href="#" class="btn btn-primary">Comprar</a>
@@ -13,3 +14,52 @@
     </div>
   </div>
 </div>
+-->
+<!-- 
+<div class="card-container">
+  <div class="grid-container">
+    <div *ngFor="let producto of productos; let i = index">
+      <div class="card">
+        <img src="{{producto.img}}" class="card-img-top" alt="...">
+        <div class="card-body">
+          <h5 class="title">{{producto.marca}}</h5>
+          <h5 class="card-title">{{producto.nombre}}</h5>
+          <p class="card-text">${{producto.precio}}</p>
+          <a href="#" class="btn btn-primary">Comprar</a>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+-->
+ <div class="fondo"> 
+<div class="card-container">
+  <div class="grid-container">
+    <div *ngFor="let producto of productos; let i = index">
+      <div class="card">
+        <!-- Imagen con efecto flip -->
+        <div class="flip-img-container">
+          <div class="flip-img-inner">
+            <div class="flip-img-front">
+              <img src="{{producto.img}}" alt="Imagen frente">
+            </div>
+            <div class="flip-img-back">
+              <img src="{{producto.imgBack}}" alt="Imagen reverso">
+            </div>
+          </div>
+        </div>
+
+        <!-- Cuerpo de la tarjeta -->
+        <div class="card-body">
+          <h5 class="title">{{producto.marca}}</h5>
+          <h5 class="card-title">{{producto.nombre}}</h5>
+          <p class="card-text">${{producto.precio}}</p>
+          <a href="#" class="btn btn-primary">Comprar</a>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+</div>
+
+
