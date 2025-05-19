@@ -12,6 +12,7 @@ export class OfertasComponent {
     {
       id: 1,
       img: "https://fearofgod.com/cdn/shop/files/192HO246250F_FLEECEHOODIE_BLACK_1_900x.jpg?v=1730829970",
+      imgBack: "https://fearofgod.com/cdn/shop/files/192HO246250F_FLEECEHOODIE_BLACK_2_900x.jpg?v=1730829970",
       marca: "Essentials",
       nombre: "Fleece Hoodie",
       precio: 105,
@@ -19,6 +20,7 @@ export class OfertasComponent {
     {
       id: 2,
       img: "https://fearofgod.com/cdn/shop/files/130HO242020F_FLEECEESSENTIALSWEATPANT_BLACK_1_900x.jpg?v=1736293192",
+      imgBack: "https://fearofgod.com/cdn/shop/files/130HO242020F_FLEECEESSENTIALSWEATPANT_BLACK_2_900x.jpg?v=1730832535",
       marca: "Essentials",
       nombre: "Fleece Essential Sweatpant",
       precio: 105,
@@ -26,6 +28,7 @@ export class OfertasComponent {
     {
       id: 3,
       img: "https://fearofgod.com/cdn/shop/files/125AS254190F_CLASSIC_FIT_T-SHIRT-JET_BLACK_1_df18cbdb-126c-464f-a039-c1728741b5f0_900x.jpg?v=1740108514",
+      imgBack: "https://fearofgod.com/cdn/shop/files/125AS254190F_CLASSIC_FIT_T-SHIRT-JET_BLACK_2_cdd4198a-4055-42e8-8b51-38969403ff6d_x800.jpg?v=1740108514",
       marca: "Essentials",
       nombre: "Classic Short Sleeve Tee",
       precio: 105,
@@ -33,6 +36,7 @@ export class OfertasComponent {
     {
       id: 4,
       img: "https://fearofgod.com/cdn/shop/files/125AS254201F_CLASSIC_FIT_LS_T-SHIRT-HOMESTEAD_HEATHER_1_372c15a5-1ab8-4174-a135-73978af1f43d_900x.jpg?v=1740108347",
+      imgBack: "https://fearofgod.com/cdn/shop/files/125AS254201F_CLASSIC_FIT_LS_T-SHIRT-HOMESTEAD_HEATHER_2_91a39336-21be-4352-b9ad-94a3c8a04b01_x800.jpg?v=1740108347",
       marca: "Essentials",
       nombre: "Classic Long Sleeve Tee",
       precio: 105,
@@ -40,6 +44,7 @@ export class OfertasComponent {
     {
       id: 5,
       img: "https://fearofgod.com/cdn/shop/files/125AS254191F_CLASSIC_FIT_T-SHIRT-HOMESTEAD_HEATHER_1_900x.jpg?v=1740108394",
+      imgBack: "https://fearofgod.com/cdn/shop/files/125AS254191F_CLASSIC_FIT_T-SHIRT-HOMESTEAD_HEATHER_2_x800.jpg?v=1740108394",
       marca: "Essentials",
       nombre: "Classic Short Sleeve Tee",
       precio: 105,
@@ -47,6 +52,7 @@ export class OfertasComponent {
     {
       id: 6,
       img: "https://fearofgod.com/cdn/shop/files/192AS254781F_CLASSIC_FIT_FLEECE_ZIP-UP_HOODIE-HOMESTEAD_HEATHER_1_ab249cad-9479-4a4b-a4af-a52e159984a5_900x.jpg?v=1740107970",
+      imgBack: "https://fearofgod.com/cdn/shop/files/192AS254781F_CLASSIC_FIT_FLEECE_ZIP-UP_HOODIE-HOMESTEAD_HEATHER_2_7395746e-e9ee-403f-a9e4-ead3a383fcb2_x800.jpg?v=1740107970",
       marca: "Essentials",
       nombre: "Classic Full Zip-Up Hoodie",
       precio: 105,
@@ -54,6 +60,7 @@ export class OfertasComponent {
     {
       id: 7,
       img: "https://cdn.shopify.com/s/files/1/1003/3354/files/192AL246501F_NBA_ESSENTIALS_HOODIE-BLACK_BLACK_1.jpg?v=1738178845",
+      imgBack: "https://fearofgod.com/cdn/shop/files/29_900x.jpg?v=1738621794",
       marca: "Essentials",
       nombre: "Essentials NBA Hoodie",
       precio: 105,
@@ -61,6 +68,7 @@ export class OfertasComponent {
     {
       id: 8,
       img: "https://cdn.shopify.com/s/files/1/1003/3354/files/192AL246500F_NBA_ESSENTIALS_HOODIE-WARM_HEATHER_BLACK_1.jpg?v=1738178755",
+      imgBack: "https://fearofgod.com/cdn/shop/files/18_900x.jpg?v=1738621603",
       marca: "Essentials",
       nombre: "Essentials NBA Hoodie",
       precio: 105,
@@ -68,6 +76,7 @@ export class OfertasComponent {
     {
       id: 9,
       img: "https://fearofgod.com/cdn/shop/files/AB7C6876-A51C-4A87-926D-E94BF0D62456_900x.jpg?v=1732042077",
+      imgBack: "",
       marca: "Essentials",
       nombre: "Essentials NBA Hoodie",
       precio: 105,
@@ -75,21 +84,25 @@ export class OfertasComponent {
 
     {
       id: 10,
-      img: "https://fearofgod.com/cdn/shop/files/2_900x.jpg?v=1738624044",
+
+      imgBack: "https://fearofgod.com/cdn/shop/files/2_900x.jpg?v=1738624044",
+      img: "https://fearofgod.com/cdn/shop/files/ED8F8904-A38F-4ED6-9B61-7FC0777BCFEC_900x.jpg?v=1738624044",
       marca: "Essentials",
       nombre: "Essentials Lakers Hoodie",
       precio: 105,
     },
     {
       id: 11,
-      img: "https://fearofgod.com/cdn/shop/files/5_575b3f81-c82b-44ff-bb0d-604af4993c40_900x.jpg?v=1738624142",
+      img:"",
+      imgBack: "https://fearofgod.com/cdn/shop/files/5_575b3f81-c82b-44ff-bb0d-604af4993c40_900x.jpg?v=1738624142",
       marca: "Essentials",
       nombre: "Essentials Celtics Hoodie",
       precio: 105,
     },
     {
       id: 12,
-      img: "https://fearofgod.com/cdn/shop/files/9_900x.jpg?v=1738621984",
+        img: "",
+      imgBack: "https://fearofgod.com/cdn/shop/files/9_900x.jpg?v=1738621984",
       marca: "Essentials",
       nombre: "Essentials Wolves Hoodie",
       precio: 105,
@@ -97,6 +110,7 @@ export class OfertasComponent {
     {
       id: 13,
       img: "",
+      imgBack: "",
       marca: "Essentials",
       nombre: "",
       precio: 105,
@@ -104,6 +118,7 @@ export class OfertasComponent {
     {
       id: 14,
       img: "",
+      imgBack: "",
       marca: "Essentials",
       nombre: "",
       precio: 105,
@@ -111,6 +126,7 @@ export class OfertasComponent {
     {
       id: 15,
       img: "",
+      imgBack: "",
       marca: "Essentials",
       nombre: "",
       precio: 105,
@@ -118,6 +134,7 @@ export class OfertasComponent {
     {
       id: 16,
       img: "",
+      imgBack: "",
       marca: "Essentials",
       nombre: "",
       precio: 105,
@@ -125,6 +142,7 @@ export class OfertasComponent {
     {
       id: 17,
       img: "",
+      imgBack: "",
       marca: "Essentials",
       nombre: "",
       precio: 105,
@@ -132,6 +150,7 @@ export class OfertasComponent {
     {
       id: 18,
       img: "",
+      imgBack: "",
       marca: "Essentials",
       nombre: "",
       precio: 105,
@@ -139,6 +158,7 @@ export class OfertasComponent {
     {
       id: 19,
       img: "",
+      imgBack: "",
       marca: "Essentials",
       nombre: "",
       precio: 105,
@@ -146,6 +166,7 @@ export class OfertasComponent {
     {
       id: 20,
       img: "",
+      imgBack: "",
       marca: "Essentials",
       nombre: "",
       precio: 105,
@@ -153,6 +174,7 @@ export class OfertasComponent {
     {
       id: 21,
       img: "",
+      imgBack: "",
       marca: "Essentials",
       nombre: "",
       precio: 105,
