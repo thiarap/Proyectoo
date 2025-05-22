@@ -99,3 +99,10 @@ body{
   transform: rotateY(180deg);
 }
 
+ header {
+ text-align: center;
+ padding: 40px 0 20px;
+ font-size: 24px;
+ letter-spacing: 3px;
+ font-weight: bold;
+ }

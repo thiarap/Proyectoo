@@ -5,7 +5,7 @@
 
 body{
  background-color: #f3ebeb;
- color: white;
+ color: #f6f6f6;
  font-family:Arial;
 }
  .card-container{
@@ -18,7 +18,7 @@ body{
  }
  .card{
  width: 18rem;
- background-color:rgb(255, 255, 255);
+ background-color:#f6f6f6;
  color: rgb(27, 2, 2);
  border-radius: 10px;
  overflow: hidden;
@@ -100,3 +100,10 @@ body{
   transform: rotateY(180deg);
 }
 
+ header {
+ text-align: center;
+ padding: 40px 0 20px;
+ font-size: 24px;
+ letter-spacing: 3px;
+ font-weight: bold;
+ }
