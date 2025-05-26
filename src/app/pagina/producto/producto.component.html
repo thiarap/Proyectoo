@@ -39,7 +39,7 @@
           <h5 class="title">{{producto.marca}}</h5>
           <h5 class="card-title">{{producto.nombre}}</h5>
           <p class="card-text">${{producto.precio}}</p>
-          <a href="#" class="btn btn-primary">Comprar</a>
+         <button type="button" class="btn btn-outline-primary" (click)="agregarAlCarrito(producto)">Agregar al carrito</button>
         </div>
       </div>
     </div>
