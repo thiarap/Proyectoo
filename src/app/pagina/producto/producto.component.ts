@@ -8,13 +8,13 @@ import { RouterModule } from '@angular/router';
 @Component({
   selector: 'app-producto',
   imports: [RouterModule, CommonModule],
+  standalone: true,
   templateUrl: './producto.component.html',
   styleUrl: './producto.component.css'
 })
 
 export class ProductoComponent {
   productos = [
-
     {
       id: 1,
       img: "https://fearofgod.com/cdn/shop/files/FG2E20-2041_HEATHERBEIGE_FINEKNITHENLEY_2_x800.jpg?v=1736797442",
@@ -188,16 +188,15 @@ export class ProductoComponent {
 
 
   constructor(private carritoService: CarritoService,
-
   ) {
 
-  }
+ }
   agregar(producto: Producto) {
     this.carritoService.agregarAlcarrito(producto)
     alert("Producto agregado al carrito")
   }
-
 }
+
 /* CARRITO*/
 
 

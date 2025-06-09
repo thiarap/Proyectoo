@@ -1,10 +1,10 @@
 .fondo{
     background-color: #f6f6f6;
 }
-header {
+.header {
  text-align: center;
  padding: 40px 0 20px;
- font-size: 24px;
+ font-size: 45px;
  letter-spacing: 3px;
  font-weight: bold;
  }
