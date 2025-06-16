@@ -2,11 +2,6 @@
   background-color: #f6f6f6;
 }
 
-body{
- background-color: #f6f6f6;
- color: white;
- font-family:Arial;
-}
  .card-container{
  display: flex;
  justify-content: center; /*centrar horizontalemente las tarjetas*/
@@ -99,10 +94,11 @@ body{
   transform: rotateY(180deg);
 }
 
+ /*ENCABEZADO/LETRA*/
  header {
  text-align: center;
  padding: 40px 0 20px;
  font-size: 24px;
- letter-spacing: 3px;
- font-weight: bold;
+ letter-spacing: 1px;
+ font-family: 'Anton', sans-serif;
  }

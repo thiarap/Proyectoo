@@ -1,10 +1,10 @@
 .fondo{
     background-color: #f6f6f6;
 }
-.header {
+ header {
  text-align: center;
  padding: 40px 0 20px;
- font-size: 45px;
- letter-spacing: 3px;
- font-weight: bold;
+ font-size: 30px;
+ letter-spacing: 1px;
+ font-family: 'Anton', sans-serif;
  }

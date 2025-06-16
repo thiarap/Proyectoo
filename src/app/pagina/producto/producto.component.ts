@@ -14,6 +14,8 @@ import { RouterModule } from '@angular/router';
 })
 
 export class ProductoComponent {
+constructor(private carritoService: CarritoService) {}
+
   productos = [
     {
       id: 1,
@@ -186,15 +188,11 @@ export class ProductoComponent {
     },
   ];
 
+ agregarAlcarrito(producto: Producto) {
+  this.carritoService.agregarAlcarrito(producto)
+  alert("Producto agregado al carrito")
+}
 
-  constructor(private carritoService: CarritoService,
-  ) {
-
- }
-  agregar(producto: Producto) {
-    this.carritoService.agregarAlcarrito(producto)
-    alert("Producto agregado al carrito")
-  }
 }
 
 /* CARRITO*/

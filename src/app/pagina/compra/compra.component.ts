@@ -7,6 +7,7 @@ import { dateTimestampProvider } from 'rxjs/internal/scheduler/dateTimestampProv
 import jsPDF from 'jspdf';
 
 
+
 @Component({
   selector: 'app-compra',
   standalone: true,

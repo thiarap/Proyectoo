@@ -18,7 +18,7 @@
 
     <tbody>
         <tr *ngFor="let item of productosEnCarrito; let i=index">
-            <td><img [src]="item.producto.imagen" alt="{{item.producto.nombre}}" style="width: 50px; height: 50px"></td>
+            <td><img [src]="item.producto.img" alt="{{item.producto.nombre}}" style="width: 50px; height: 50px"></td>
             <td>{{item.producto.nombre}}</td>
             <td>{{item.producto.descripcion}}</td>
             <td>{{item.producto.precio | currency}}</td>

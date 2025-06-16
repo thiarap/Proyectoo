@@ -40,10 +40,10 @@ export class CarritoComponent implements OnInit {
     this.carritoService.vaciarCarrito()
   }
   
-  /*realizarCompra(){
+  realizarCompra(){
     alert('Compra realizada')
     this.vaciarCarrito()
-  }*/
+  }
 
     //navega al formulario de compra
     irAFormularioCompra(){

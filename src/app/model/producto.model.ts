@@ -1,10 +1,13 @@
-export interface Producto{
-    id: number;
-    nombre: string;
-    descripcion: string;
-    precio: number;
-    imagen: string;
-    imgBack:string
-    disponible: boolean;
-    cantidad?: number;
+
+export interface Producto {
+  id: number;
+  nombre: string;
+  img: string;
+  imgBack: string;
+  marca: string;
+  precio: number;
+
+  // Propiedades opcionales
+  descripcion?: string;
+  disponible?: boolean;
 }
