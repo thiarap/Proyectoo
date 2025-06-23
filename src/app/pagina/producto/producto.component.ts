@@ -8,14 +8,11 @@ import { RouterModule } from '@angular/router';
 @Component({
   selector: 'app-producto',
   imports: [RouterModule, CommonModule],
-  standalone: true,
   templateUrl: './producto.component.html',
   styleUrl: './producto.component.css'
 })
 
 export class ProductoComponent {
-constructor(private carritoService: CarritoService) {}
-
   productos = [
     {
       id: 1,
@@ -187,8 +184,9 @@ constructor(private carritoService: CarritoService) {}
       precio: 80,
     },
   ];
-
- agregarAlcarrito(producto: Producto) {
+  
+constructor(private carritoService: CarritoService) {}
+ agregarcarrito(producto: Producto) {
   this.carritoService.agregarAlcarrito(producto)
   alert("Producto agregado al carrito")
 }

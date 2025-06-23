@@ -1,9 +1,10 @@
-import { NgFor } from '@angular/common';
+import { CommonModule, NgFor } from '@angular/common';
 import { Component } from '@angular/core';
+import { RouterModule } from '@angular/router';
 
 @Component({
   selector: 'app-ofertas',
-  imports: [NgFor],
+  imports: [RouterModule, CommonModule],
   templateUrl: './ofertas.component.html',
   styleUrl: './ofertas.component.css'
 })
