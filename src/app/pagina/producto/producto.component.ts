@@ -191,9 +191,18 @@ constructor(private carritoService: CarritoService) {}
   alert("Producto agregado al carrito")
 }
 
+
+
+
+
+
+
+
+
+
+
 }
 
-/* CARRITO*/
 
 
 

@@ -28,9 +28,8 @@ export class CarritoService {
   }
 
 
-  //metodo para actualizar la cantidad de un producto en el carrito
   actualizarCantidad(productoId: number, nuevaCantidad: number) {
-    //recorremosel carrito y actualizamos la cantidad del producto con el ID dado
+    //recorremos el carrito y actualizamos la cantidad del producto con el ID dado
     const productos = this.carritoSubject.getValue().map(item => {
       if (item.producto.id === productoId) {
         //retornamos una copia del producto con la nueva cantidad
@@ -56,5 +55,4 @@ export class CarritoService {
   }
 
   constructor() { }
-
 }

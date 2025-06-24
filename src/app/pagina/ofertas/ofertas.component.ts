@@ -1,6 +1,8 @@
 import { CommonModule, NgFor } from '@angular/common';
 import { Component } from '@angular/core';
 import { RouterModule } from '@angular/router';
+import { CarritoService } from '../../servicios/carrito.service';
+import { Producto } from '../../model/producto.model';
 
 @Component({
   selector: 'app-ofertas',
@@ -158,6 +160,13 @@ export class OfertasComponent {
     },
 
   ];
+
+constructor(private carritoService: CarritoService) {}
+ agregarcarrito(producto: Producto) {
+  this.carritoService.agregarAlcarrito(producto)
+  alert("Producto agregado al carrito")
+}
+
 }
 
 

@@ -8,3 +8,17 @@
  letter-spacing: 1px;
  font-family: 'Anton', sans-serif;
  }
+ .text{
+ text-align: center;
+ padding: 40px 0 20px;
+ font-size: 19px;
+ letter-spacing: 2px;
+ font-family: sans-serif;
+ }
+.gallery {
+ display: flex;
+ justify-content: center;
+ gap: 30px;
+ padding: 40px;
+ flex-wrap: wrap;
+ }
