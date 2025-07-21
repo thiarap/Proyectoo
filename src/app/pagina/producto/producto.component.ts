@@ -4,6 +4,7 @@ import { NonNullableFormBuilder } from '@angular/forms';
 import { CarritoService } from '../../servicios/carrito.service';
 import { Producto } from '../../model/producto.model';
 import { RouterModule } from '@angular/router';
+import { FavoritosService } from '../../servicios/favoritos.service';
 
 @Component({
   selector: 'app-producto',
@@ -185,12 +186,20 @@ export class ProductoComponent {
     },
   ];
   
-constructor(private carritoService: CarritoService) {}
- agregarcarrito(producto: Producto) {
-  this.carritoService.agregarAlcarrito(producto)
-  alert("Producto agregado al carrito")
-}
 
+ constructor(private carritoService: CarritoService,
+    private favoritosService: FavoritosService
+  ) { }
+
+  agregarAlcarrito(producto: Producto) {
+    this.carritoService.agregarAlcarrito(producto)
+    alert("Producto agregado al carrito")
+  }
+
+  agregarr(producto: Producto) {
+    this.favoritosService.agregarAlfavoritos(producto)
+    alert("Producto agregado a favoritos")
+  }
 
 
 

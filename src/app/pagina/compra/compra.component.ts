@@ -130,7 +130,7 @@ export class CompraComponent implements OnInit {
     //abre el modal que contiene el PDF
     this.mostrarModal = true;
   }
-  //metodo para cerrar el modal y libberal el url del pdf para evitar fugas de memoria
+  //metodo para cerrar el modal y liberal el url del pdf para evitar fugas de memoria
   cerrarModal(): void {
     this.mostrarModal = false
 
