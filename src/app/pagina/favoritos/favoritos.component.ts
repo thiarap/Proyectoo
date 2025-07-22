@@ -15,7 +15,6 @@ export class FavoritosComponent implements OnInit {
 productosEnfavoritos: { producto: Producto; cantidad: number }[] = []
 
   constructor(private favoritosService: FavoritosService){}
-
   ngOnInit(): void {
     this.favoritosService.favorito$.subscribe((productos) =>{
       this.productosEnfavoritos = productos
