@@ -20,17 +20,6 @@ productosEnfavoritos: { producto: Producto; cantidad: number }[] = []
       this.productosEnfavoritos = productos
     })
   }
-
-  agregarCantidad(index : number){
-    this.productosEnfavoritos[index].cantidad++
-  }
-
-  quitarCantidad(index:number){
-    if(this.productosEnfavoritos[index].cantidad > 1){
-      this.productosEnfavoritos[index].cantidad--
-    }
-  }
-
   eliminarProducto(productoId:number){
     this.favoritosService.eliminarDefavoritos(productoId)
   }
@@ -39,8 +28,4 @@ productosEnfavoritos: { producto: Producto; cantidad: number }[] = []
     this.favoritosService.vaciarfavoritos()
   }
   
-  realizarCompra(){
-    alert('Se agrego a favoritos')
-    this.vaciarCarrito()
-  }
 }

@@ -6,7 +6,8 @@ import { NosotrosComponent } from './pagina/nosotros/nosotros.component';
 import { OfertasComponent } from './pagina/ofertas/ofertas.component';
 import { ContactoComponent } from './pagina/contacto/contacto.component';
 import { CompraComponent } from './pagina/compra/compra.component';
-import { FavoritosComponent } from './servicios/favoritos/favoritos.component';
+import { FavoritosComponent } from './pagina/favoritos/favoritos.component';
+
 
 export const routes: Routes = [
     { path: '', redirectTo: '/inicio', pathMatch: 'full' },

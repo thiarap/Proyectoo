@@ -22,6 +22,7 @@ export class ProductoComponent {
       marca: "Fear of god",
       nombre: "Fine Knit Henley",
       precio: 105,
+      disponibilidad : true,
     },
     {
       id: 2,
@@ -30,6 +31,7 @@ export class ProductoComponent {
       marca: "Fear of god",
       nombre: "Eternal Merino Knit Hoodie",
       precio: 190,
+      disponibilidad : true,
     },
     {
       id: 3,
@@ -37,7 +39,8 @@ export class ProductoComponent {
       imgBack: "https://fearofgod.com/cdn/shop/files/FGE230-330DWC_OVERSHIRT_DUSTYBEIGE_2_1_900x.jpg?v=1733869351",
       marca: "Fear of god",
       nombre: "Wool Cashmere Overshirt",
-      precio: 3,
+      precio: 95,
+      disponibilidad : true,
     },
     {
       id: 4,
@@ -45,7 +48,8 @@ export class ProductoComponent {
       imgBack: "https://fearofgod.com/cdn/shop/files/FGE250-5141FLC_ETERNALCREWNECK_DUSTYBEIGE_2_x800.jpg?v=1740422837",
       marca: "Fear of god",
       nombre: "Eternal Crewneck",
-      precio: 199,
+      precio: 134,
+      disponibilidad:true,
     },
     {
       id: 5,
@@ -53,7 +57,8 @@ export class ProductoComponent {
       imgBack: "https://fearofgod.com/cdn/shop/files/FGE250-51211FLC_ETERNALHOODIE_DOVEGREY_2_2e9545eb-3085-4558-9aa9-59894d2cb0b9_x800.jpg?v=1740438047",
       marca: "Fear of god",
       nombre: "Eternal Hoodie",
-      precio: 205,
+      precio: 124,
+      disponibilidad : true,
     },
     {
       id: 6,
@@ -61,7 +66,8 @@ export class ProductoComponent {
       imgBack: "https://fearofgod.com/cdn/shop/files/FGE240-4161FLC_SWEATPANT_DUSTYBIEGE_2_98f5700a-5766-49ac-b1f3-ce47488efa94_900x.jpg?v=1740434249",
       marca: "Fear of god",
       nombre: "Eternal Sweatpant",
-      precio: 90,
+      precio: 110,
+      disponibilidad: true,
     },
     {
       id: 7,
@@ -69,7 +75,8 @@ export class ProductoComponent {
       imgBack: "https://fearofgod.com/cdn/shop/files/FGE240-408DNM_5POCKETSTRAIGHTLEG_REPAIREDINDIGO_2_900x.jpg?v=1738104824",
       marca: "Fear of god",
       nombre: "Repaired Classic 5 Pocket",
-      precio: 3,
+      precio: 142,
+      disponibilidad: true,
     },
     {
       id: 8,
@@ -77,7 +84,8 @@ export class ProductoComponent {
       imgBack: "https://fearofgod.com/cdn/shop/files/FG2E30-318_INDIGO2_DENIMTRUCKERJACKET_2_900x.jpg?v=1736876863",
       marca: "Fear of god",
       nombre: "Denim Trucker Jacket",
-      precio: 3,
+      precio: 132,
+      disponibilidad: true,
     },
     {
       id: 9,
@@ -85,7 +93,8 @@ export class ProductoComponent {
       imgBack: "https://fearofgod.com/cdn/shop/files/785BT246770K_DENIM_TRUCKER_JACKET-VINTAGE_BLUE_2_x800.jpg?v=1726609834",
       marca: "Fear of god",
       nombre: "Kids Denim Trucker Jacket",
-      precio: 80,
+      precio: 114,
+      disponibilidad : true,
     },
 
     {
@@ -94,7 +103,8 @@ export class ProductoComponent {
       imgBack: "https://fearofgod.com/cdn/shop/files/FG2E50-51311_BLACK_ETERNALHALFZIPHOODIE_2_x800.jpg?v=1740426583",
       marca: "Fear of god",
       nombre: "Eternal Half Zip Hoodie",
-      precio: 80,
+      precio: 125,
+      disponibilidad : true,
     },
     {
       id: 11,
@@ -102,7 +112,8 @@ export class ProductoComponent {
       imgBack: "https://fearofgod.com/cdn/shop/files/FG24FW30-607NUB_LEATHER_HOODED_BOMBER-BLACK_2_x800.jpg?v=1725986692",
       marca: "Fear of god",
       nombre: "Leather Hooded Bomber",
-      precio: 80,
+      precio: 134,
+      disponibilidad : true,
     },
     {
       id: 12,
@@ -110,7 +121,8 @@ export class ProductoComponent {
       imgBack: "https://fearofgod.com/cdn/shop/files/FG24FW50-1011FLC_HALF_ZIP_MOCKNECK_BLACK_2_x800.jpg?v=1721836864",
       marca: "Fear of god",
       nombre: "Fleece Half Zip Mockneck",
-      precio: 80,
+      precio: 120,
+      disponibilidad : true,
     },
     {
       id: 13,
@@ -118,7 +130,8 @@ export class ProductoComponent {
       imgBack: "https://fearofgod.com/cdn/shop/files/FGE230-330DWC_OVERSHIRT_BLACK_2_900x.jpg?v=1733876887",
       marca: "Fear of god",
       nombre: "Wool Cashmere black Overshirt",
-      precio: 80,
+      precio: 150,
+      disponibilidad : true,
     },
     {
       id: 14,
@@ -126,7 +139,8 @@ export class ProductoComponent {
       imgBack: "https://fearofgod.com/cdn/shop/files/FG2E30-300_BLACK_LAPELLESSRELAXEDCOAT_3_900x.jpg?v=1733879921",
       marca: "Fear of god",
       nombre: "Boiled Wool Lapelless Relaxed Coat",
-      precio: 80,
+      precio: 155,
+      disponibilidad : true,
     },
     {
       id: 15,
@@ -134,7 +148,8 @@ export class ProductoComponent {
       imgBack: "https://fearofgod.com/cdn/shop/files/FG2E60-6031_CHARCOAL_RELAXEDLAPELLESSBLAZER_2_900x.jpg?v=1733885173",
       marca: "Fear of god",
       nombre: "Wool Cashmere Relaxed Lapelless Blazer",
-      precio: 80,
+      precio: 130,
+      disponibilidad : true,
     },
     {
       id: 16,
@@ -142,7 +157,8 @@ export class ProductoComponent {
       imgBack: "https://fearofgod.com/cdn/shop/files/FGE250-5141FLC_ETERNALCREWNECK_DOVEGREY_2_x800.jpg?v=1740423011",
       marca: "Fear of god",
       nombre: "Eternal Hoddie",
-      precio: 80,
+      precio: 120,
+      disponibilidad : true,
     },
     {
       id: 17,
@@ -150,7 +166,8 @@ export class ProductoComponent {
       imgBack: "https://fearofgod.com/cdn/shop/files/FGE250-5101HWJ_ETERNALTEE_WHITE_2copy_x800.jpg?v=1737043510",
       marca: "Fear of god",
       nombre: "Eternal Jersey Tee",
-      precio: 80,
+      precio: 95,
+      disponibilidad : true,
     },
     {
       id: 18,
@@ -158,7 +175,8 @@ export class ProductoComponent {
       imgBack: "https://fearofgod.com/cdn/shop/files/FGE250-5111HWJ_ETERNALLONGSLEEVETEE_DOVEGREY_2_x800.jpg?v=1740425688",
       marca: "Fear of god",
       nombre: "Eternal Long Sleeve Tee",
-      precio: 80,
+      precio: 125,
+      disponibilidad : true,
     },
     {
       id: 19,
@@ -166,7 +184,8 @@ export class ProductoComponent {
       imgBack: "https://fearofgod.com/cdn/shop/files/FG2E30-318_BLACK_DENIMTRUCKERJACKET_2_x800.jpg?v=1737060772",
       marca: "Fear of god",
       nombre: "Denim Trucker Jacket",
-      precio: 80,
+      precio: 127,
+      disponibilidad : true,
     },
     {
       id: 20,
@@ -174,7 +193,8 @@ export class ProductoComponent {
       imgBack: "https://fearofgod.com/cdn/shop/files/FG2E20-2031_BLACK_ETERNALKNITHOODIE_2_900x.jpg?v=1733792594",
       marca: "Fear of god",
       nombre: "Eternal Hoddie",
-      precio: 80,
+      precio: 130,
+      disponibilidad : true,
     },
     {
       id: 21,
@@ -182,7 +202,8 @@ export class ProductoComponent {
       imgBack: "https://fearofgod.com/cdn/shop/files/FG2E40-408_BLACK_STRAIGHT5POCKET_2_900x.jpg?v=1737072149",
       marca: "Fear of god",
       nombre: "Classic 5 Pocket",
-      precio: 80,
+      precio: 120,
+      disponibilidad : true,
     },
   ];
   

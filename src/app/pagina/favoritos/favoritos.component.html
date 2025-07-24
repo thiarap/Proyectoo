@@ -10,7 +10,6 @@
             <th>Nombre</th>
             <th>Descripicion</th>
             <th>Precio</th>
-            <th>Cantidad</th>
             <th>Acciones</th>
         </tr>
     </thead>
@@ -21,18 +20,14 @@
             <td>{{item.producto.nombre}}</td>
             <td>{{item.producto.descripcion}}</td>
             <td>{{item.producto.precio | currency}}</td>
+            
             <td>
-                <button (click)="quitarCantidad(i)">-</button>
-                {{item.cantidad}}
-                <button (click)="agregarCantidad(i)">+</button>
-            </td>
-            <td>
-                <button (click)="eliminarProducto(item.producto.id)" >eliminar</button>
+                <button class="neu-button" (click)="eliminarProducto(item.producto.id)" >Eliminar</button>
             </td>
         </tr>
     </tbody>
 </table>
-<button (click)="realizarCompra()" class="btn btn-success">Favoritos</button>
+
 
 
 

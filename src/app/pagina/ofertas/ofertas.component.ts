@@ -19,7 +19,7 @@ export class OfertasComponent {
       imgBack: "https://fearofgod.com/cdn/shop/files/192HO246250F_FLEECEHOODIE_BLACK_2_900x.jpg?v=1730829970",
       marca: "Essentials",
       nombre: "Fleece Hoodie",
-      precio: 105,
+      precio: 115,
     },
     {
       id: 2,
@@ -35,7 +35,7 @@ export class OfertasComponent {
       imgBack: "https://fearofgod.com/cdn/shop/files/125AS254190F_CLASSIC_FIT_T-SHIRT-JET_BLACK_2_cdd4198a-4055-42e8-8b51-38969403ff6d_x800.jpg?v=1740108514",
       marca: "Essentials",
       nombre: "Classic Short Sleeve Tee",
-      precio: 105,
+      precio: 90,
     },
     {
       id: 4,
@@ -43,7 +43,7 @@ export class OfertasComponent {
       imgBack: "https://fearofgod.com/cdn/shop/files/125AS254201F_CLASSIC_FIT_LS_T-SHIRT-HOMESTEAD_HEATHER_2_91a39336-21be-4352-b9ad-94a3c8a04b01_x800.jpg?v=1740108347",
       marca: "Essentials",
       nombre: "Classic Long Sleeve Tee",
-      precio: 105,
+      precio: 94,
     },
     {
       id: 5,
@@ -51,7 +51,7 @@ export class OfertasComponent {
       imgBack: "https://fearofgod.com/cdn/shop/files/125AS254191F_CLASSIC_FIT_T-SHIRT-HOMESTEAD_HEATHER_2_x800.jpg?v=1740108394",
       marca: "Essentials",
       nombre: "Classic Short Sleeve Tee",
-      precio: 105,
+      precio: 96,
     },
     {
       id: 6,
@@ -59,7 +59,7 @@ export class OfertasComponent {
       imgBack: "https://fearofgod.com/cdn/shop/files/192AS254781F_CLASSIC_FIT_FLEECE_ZIP-UP_HOODIE-HOMESTEAD_HEATHER_2_7395746e-e9ee-403f-a9e4-ead3a383fcb2_x800.jpg?v=1740107970",
       marca: "Essentials",
       nombre: "Classic Full Zip-Up Hoodie",
-      precio: 105,
+      precio: 116,
     },
     {
       id: 7,
@@ -67,7 +67,7 @@ export class OfertasComponent {
       imgBack: "https://fearofgod.com/cdn/shop/files/29_900x.jpg?v=1738621794",
       marca: "Essentials",
       nombre: "Essentials NBA Hoodie",
-      precio: 105,
+      precio: 129,
     },
     {
       id: 8,
@@ -75,7 +75,7 @@ export class OfertasComponent {
       imgBack: "https://fearofgod.com/cdn/shop/files/18_900x.jpg?v=1738621603",
       marca: "Essentials",
       nombre: "Essentials NBA Hoodie",
-      precio: 105,
+      precio: 131,
     },
     {
       id: 9,
@@ -83,7 +83,7 @@ export class OfertasComponent {
       imgBack: "https://fearofgod.com/cdn/shop/files/Essentials_HO24_NBAKnicks01_0029_2_copy-3-4crop_900x.jpg?v=1732044256",
       marca: "Essentials",
       nombre: "Essentials NBA Hoodie",
-      precio: 105,
+      precio: 135,
     },
 
     {
@@ -93,7 +93,7 @@ export class OfertasComponent {
       img: "https://fearofgod.com/cdn/shop/files/ED8F8904-A38F-4ED6-9B61-7FC0777BCFEC_900x.jpg?v=1738624044",
       marca: "Essentials",
       nombre: "Essentials Lakers Hoodie",
-      precio: 105,
+      precio: 135,
     },
     {
       id: 11,
@@ -101,7 +101,7 @@ export class OfertasComponent {
       imgBack: "https://fearofgod.com/cdn/shop/files/5_575b3f81-c82b-44ff-bb0d-604af4993c40_900x.jpg?v=1738624142",
       marca: "Essentials",
       nombre: "Essentials Celtics Hoodie",
-      precio: 105,
+      precio: 125,
     },
     {
       id: 12,
@@ -109,7 +109,7 @@ export class OfertasComponent {
       imgBack: "https://fearofgod.com/cdn/shop/files/9_900x.jpg?v=1738621984",
       marca: "Essentials",
       nombre: "Essentials Wolves Hoodie",
-      precio: 105,
+      precio: 115,
     },
     {
       id: 13,
@@ -133,7 +133,7 @@ export class OfertasComponent {
       imgBack: "https://fearofgod.com/cdn/shop/files/125SP255860FW_WOMENS_CLASSIC_FIT_TEE-CLOUD_WHITE_2_x800.jpg?v=1747329059",
       marca: "Essentials",
       nombre: "Womens Classic tee",
-      precio: 105,
+      precio: 95,
     },
     {
       id: 16,
@@ -141,7 +141,7 @@ export class OfertasComponent {
       imgBack: "https://fearofgod.com/cdn/shop/files/202HO245400FW_BRUSHED_HOODED_BOMBER-BROWN_2_900x.jpg?v=1731428745",
       marca: "Essentials",
       nombre: "Women's Brushed Hooded Bomber",
-      precio: 105,
+      precio: 125,
     },
     {
       id: 17,
@@ -149,7 +149,7 @@ export class OfertasComponent {
       imgBack: "https://fearofgod.com/cdn/shop/files/202HO245400FW_BRUSHED_HOODED_BOMBER-BLACK_2_900x.jpg?v=1731431197",
       marca: "Essentials",
       nombre: "Women's Brushed Hooded Bomber",
-      precio: 105,
+      precio: 130,
     },
     {
       id: 18,

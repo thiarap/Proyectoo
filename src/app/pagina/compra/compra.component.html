@@ -114,7 +114,7 @@
             <p>Envio: ${{envio.toFixed(2)}}</p>
             <p><strong>Total a pagar : ${{calcularTotal() | number:'1.2.2'}}</strong></p>
         </div>
-        <button type="submit" class="btn btn-primary"> Finalizar Compra</button>
+        <button class="neu-button" > Finalizar Compra</button>
     </div>
 </form>
 
@@ -132,8 +132,8 @@
             </div>
 
             <div class="modal-footer">
-                <button type="button" class="btn btn-success" (click)="imprimirPDF()"> Imprimir </button>
-                <button type="button" class="btn btn-secondary" (click)="cerrarModal()"> Cerrar </button>
+                <button class="neu-button"  type="button" class="btn btn-success" (click)="imprimirPDF()"> Imprimir </button>
+                <button class="neu-button"  type="button" class="btn btn-secondary" (click)="cerrarModal()"> Cerrar </button>
             </div>
 
         </div>
