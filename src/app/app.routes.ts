@@ -7,6 +7,8 @@ import { OfertasComponent } from './pagina/ofertas/ofertas.component';
 import { ContactoComponent } from './pagina/contacto/contacto.component';
 import { CompraComponent } from './pagina/compra/compra.component';
 import { FavoritosComponent } from './pagina/favoritos/favoritos.component';
+import { RegistrarseComponent } from './pagina/registrarse/registrarse.component';
+import { InicioSesionComponent } from './pagina/inicio-sesion/inicio-sesion.component';
 
 
 export const routes: Routes = [
@@ -18,6 +20,8 @@ export const routes: Routes = [
     { path: 'ofertas', component: OfertasComponent },
     { path: 'contacto', component: ContactoComponent },
     { path: 'compra', component: CompraComponent },
-    { path: 'favoritos', component: FavoritosComponent }
+    { path: 'favoritos', component: FavoritosComponent },
+    {path: 'registrarse', component: RegistrarseComponent},
+    {path: 'inicio-sesion', component:InicioSesionComponent}
 ];
 
