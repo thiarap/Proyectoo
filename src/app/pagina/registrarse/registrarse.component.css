@@ -1,27 +1,29 @@
+.container{
+  width: 100%;
+}
 
-  header {
+ header {
  text-align: center;
  padding: 40px 0 20px;
  font-size: 24px;
  letter-spacing: 1px;
  font-family: 'Anton', sans-serif;
  }
+ 
 
  /*FORMULARIO*/
  .form {
+  width: 30%;
+  align-items: center;
+  height: auto;
+  margin-left: 35%;
+  margin-top: 5%;
+  background-color: #fff;
+  padding: 30px;
+  border-radius: 5px;
   display: flex;
   flex-direction: column;
-  gap: 10px;
-  max-width: 350px;
-  background-color: #fff;
-  border-radius: 20px;
-/*posicionar en el centro*/
-display: flex;
- justify-content: center; /*centrar horizontalemente las tarjetas*/
- flex-wrap: wrap; /*que se acomode a la panatalla*/
- padding: 40px;
-
-     
+  
 }
 
 .title {
@@ -152,7 +154,7 @@ display: flex;
   box-shadow: inset 4px 4px 10px #bcbcbc, inset -4px -4px 10px #ffffff;
   color: #4d4d4d;
   cursor: pointer;
-  font-size: 18px;
+  font-size: 15px;
   padding: 10px 20px;
   transition: all 0.2s ease-in-out;
   border: 2px solid rgb(206, 206, 206);

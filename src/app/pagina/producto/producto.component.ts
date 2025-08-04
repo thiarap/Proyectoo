@@ -5,6 +5,7 @@ import { CarritoService } from '../../servicios/carrito.service';
 import { Producto } from '../../model/producto.model';
 import { RouterModule } from '@angular/router';
 import { FavoritosService } from '../../servicios/favoritos.service';
+import { StreamPriorityOptions } from 'node:http2';
 
 @Component({
   selector: 'app-producto',
@@ -22,7 +23,8 @@ export class ProductoComponent {
       marca: "Fear of god",
       nombre: "Fine Knit Henley",
       precio: 105,
-      disponibilidad : true,
+      disponibilidad: true,
+      categoria: "",
     },
     {
       id: 2,
@@ -31,7 +33,8 @@ export class ProductoComponent {
       marca: "Fear of god",
       nombre: "Eternal Merino Knit Hoodie",
       precio: 190,
-      disponibilidad : true,
+      disponibilidad: true,
+      categoria: "",
     },
     {
       id: 3,
@@ -40,7 +43,8 @@ export class ProductoComponent {
       marca: "Fear of god",
       nombre: "Wool Cashmere Overshirt",
       precio: 95,
-      disponibilidad : true,
+      disponibilidad: true,
+      categoria: "",
     },
     {
       id: 4,
@@ -49,7 +53,8 @@ export class ProductoComponent {
       marca: "Fear of god",
       nombre: "Eternal Crewneck",
       precio: 134,
-      disponibilidad:true,
+      disponibilidad: true,
+      categoria: "",
     },
     {
       id: 5,
@@ -58,7 +63,8 @@ export class ProductoComponent {
       marca: "Fear of god",
       nombre: "Eternal Hoodie",
       precio: 124,
-      disponibilidad : true,
+      disponibilidad: true,
+      categoria: "",
     },
     {
       id: 6,
@@ -68,6 +74,7 @@ export class ProductoComponent {
       nombre: "Eternal Sweatpant",
       precio: 110,
       disponibilidad: true,
+      categoria: "",
     },
     {
       id: 7,
@@ -77,6 +84,7 @@ export class ProductoComponent {
       nombre: "Repaired Classic 5 Pocket",
       precio: 142,
       disponibilidad: true,
+      categoria: "",
     },
     {
       id: 8,
@@ -86,6 +94,7 @@ export class ProductoComponent {
       nombre: "Denim Trucker Jacket",
       precio: 132,
       disponibilidad: true,
+      categoria: "",
     },
     {
       id: 9,
@@ -94,7 +103,8 @@ export class ProductoComponent {
       marca: "Fear of god",
       nombre: "Kids Denim Trucker Jacket",
       precio: 114,
-      disponibilidad : true,
+      disponibilidad: true,
+      categoria: "",
     },
 
     {
@@ -104,7 +114,8 @@ export class ProductoComponent {
       marca: "Fear of god",
       nombre: "Eternal Half Zip Hoodie",
       precio: 125,
-      disponibilidad : true,
+      disponibilidad: true,
+      categoria: "",
     },
     {
       id: 11,
@@ -113,7 +124,8 @@ export class ProductoComponent {
       marca: "Fear of god",
       nombre: "Leather Hooded Bomber",
       precio: 134,
-      disponibilidad : true,
+      disponibilidad: true,
+      categoria: "",
     },
     {
       id: 12,
@@ -122,7 +134,8 @@ export class ProductoComponent {
       marca: "Fear of god",
       nombre: "Fleece Half Zip Mockneck",
       precio: 120,
-      disponibilidad : true,
+      disponibilidad: true,
+      categoria: "",
     },
     {
       id: 13,
@@ -131,7 +144,8 @@ export class ProductoComponent {
       marca: "Fear of god",
       nombre: "Wool Cashmere black Overshirt",
       precio: 150,
-      disponibilidad : true,
+      disponibilidad: true,
+      categoria: "",
     },
     {
       id: 14,
@@ -140,7 +154,8 @@ export class ProductoComponent {
       marca: "Fear of god",
       nombre: "Boiled Wool Lapelless Relaxed Coat",
       precio: 155,
-      disponibilidad : true,
+      disponibilidad: true,
+      categoria: "",
     },
     {
       id: 15,
@@ -149,7 +164,8 @@ export class ProductoComponent {
       marca: "Fear of god",
       nombre: "Wool Cashmere Relaxed Lapelless Blazer",
       precio: 130,
-      disponibilidad : true,
+      disponibilidad: true,
+      categoria: "",
     },
     {
       id: 16,
@@ -158,7 +174,8 @@ export class ProductoComponent {
       marca: "Fear of god",
       nombre: "Eternal Hoddie",
       precio: 120,
-      disponibilidad : true,
+      disponibilidad: true,
+      categoria: "",
     },
     {
       id: 17,
@@ -167,7 +184,8 @@ export class ProductoComponent {
       marca: "Fear of god",
       nombre: "Eternal Jersey Tee",
       precio: 95,
-      disponibilidad : true,
+      disponibilidad: true,
+      categoria: "",
     },
     {
       id: 18,
@@ -176,7 +194,8 @@ export class ProductoComponent {
       marca: "Fear of god",
       nombre: "Eternal Long Sleeve Tee",
       precio: 125,
-      disponibilidad : true,
+      disponibilidad: true,
+      categoria: "",
     },
     {
       id: 19,
@@ -185,7 +204,8 @@ export class ProductoComponent {
       marca: "Fear of god",
       nombre: "Denim Trucker Jacket",
       precio: 127,
-      disponibilidad : true,
+      disponibilidad: true,
+      categoria: "",
     },
     {
       id: 20,
@@ -194,7 +214,8 @@ export class ProductoComponent {
       marca: "Fear of god",
       nombre: "Eternal Hoddie",
       precio: 130,
-      disponibilidad : true,
+      disponibilidad: true,
+      categoria: "",
     },
     {
       id: 21,
@@ -203,12 +224,13 @@ export class ProductoComponent {
       marca: "Fear of god",
       nombre: "Classic 5 Pocket",
       precio: 120,
-      disponibilidad : true,
+      disponibilidad: true,
+      categoria: "",
     },
   ];
-  
 
- constructor(private carritoService: CarritoService,
+
+  constructor(private carritoService: CarritoService,
     private favoritosService: FavoritosService
   ) { }
 
@@ -222,22 +244,40 @@ export class ProductoComponent {
     alert("Producto agregado a favoritos")
   }
 
+  searchTerm: string = '';
+  selectedCategory: string = '';
+  selectedBrand: string = '';
+  minprecio: number | null = null;
+  maxprecio: number | null = null;
 
+  get categories(): string[] {
+    return [...new Set(this.productos.map(p => p.categoria))]
+  }
+   get marca(): string[] {
+    return [...new Set(this.productos.map(p => p.marca))]
+  }
 
+  onSearch(event:Event): void{
+    event.preventDefault();
+  }
 
+  resetfilters():void{
+    this.searchTerm='' ;
+    this.selectedCategory='' ;
+    this.selectedBrand='' ;
+    this.minprecio=null ;
+    this.maxprecio= null ;
+  }
 
-
-
-
-
-
+  get filteredProducts():Producto[]{
+    return this.productos.filter (p=>
+    (this.searchTerm === '' || p.nombre.toLowerCase().includes(this.searchTerm.toLowerCase())) &&
+    (this.selectedCategory === '' || p.categoria === this.selectedCategory) &&
+    (this.selectedBrand === '' || p.marca === this.selectedBrand) &&
+    (this.minprecio === null || p.precio>= this.minprecio) &&
+    (this.maxprecio === null || p.precio>= this.maxprecio) 
+    )
+  }
 }
 
 
-
-
-/* agregarr(producto: Producto) {
-   this.favoritosService.agregarAlfavoritos(producto)
-   alert("Producto agregado a favoritos")
- }
-*/
