@@ -1,6 +1,6 @@
 import { CommonModule, NgFor, NgIf } from '@angular/common';
-import { Component, OnInit } from '@angular/core';
-import { NonNullableFormBuilder } from '@angular/forms';
+import { Component, NgModule, OnInit } from '@angular/core';
+import { FormsModule, NgModel, NonNullableFormBuilder } from '@angular/forms';
 import { CarritoService } from '../../servicios/carrito.service';
 import { Producto } from '../../model/producto.model';
 import { RouterModule } from '@angular/router';
@@ -9,7 +9,8 @@ import { StreamPriorityOptions } from 'node:http2';
 
 @Component({
   selector: 'app-producto',
-  imports: [RouterModule, CommonModule],
+  imports: [RouterModule, CommonModule,FormsModule],
+  standalone:true,
   templateUrl: './producto.component.html',
   styleUrl: './producto.component.css'
 })
@@ -25,6 +26,7 @@ export class ProductoComponent {
       precio: 105,
       disponibilidad: true,
       categoria: "",
+      
     },
     {
       id: 2,
@@ -94,7 +96,7 @@ export class ProductoComponent {
       nombre: "Denim Trucker Jacket",
       precio: 132,
       disponibilidad: true,
-      categoria: "",
+      categoria: "d",
     },
     {
       id: 9,
@@ -270,7 +272,7 @@ export class ProductoComponent {
   }
 
   get filteredProducts():Producto[]{
-    return this.productos.filter (p=>
+    return  this.productos.filter (p=>
     (this.searchTerm === '' || p.nombre.toLowerCase().includes(this.searchTerm.toLowerCase())) &&
     (this.selectedCategory === '' || p.categoria === this.selectedCategory) &&
     (this.selectedBrand === '' || p.marca === this.selectedBrand) &&

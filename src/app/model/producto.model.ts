@@ -6,9 +6,11 @@ export interface Producto {
   imgBack: string;
   marca: string;
   precio: number;
-  categoria: string;
+  categoria?: string;
+  
+  
 
   // Propiedades opcionales
   descripcion?: string;
-  disponible?: boolean;
+  disponibilidad?: boolean;
 }
