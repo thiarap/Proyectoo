@@ -101,9 +101,10 @@ header h1 {
 }
 
 .middle-text {
-  max-width: 250px;
-  text-align: justify;
+  max-width: 300px;
+  text-align: center;
   font-size: 14px;
+
 }
 
 
